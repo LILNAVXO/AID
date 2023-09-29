@@ -1,0 +1,49 @@
+name: AID
+version: '${project.version}'
+main: me.ophiuchus.AID
+api-version: '1.19'
+authors: [Ophiuchus___]
+description: A portal to receive aid from staffs
+
+commands:
+  AID:
+    description: A portal to receive aid from staffs
+    usage: /<command>
+    permission: aid.use
+    permission-message: You have no access to this command
+  Vanish:
+    description: Command for staff to vanish and reveal themselves
+    usage: /<command>
+    permission: aid.staff
+    aliases: [v]
+  StaffChat:
+    description: separate chat for staffs
+    usage: /<command>
+    permission: aid.staff
+    aliases: [s, sc]
+  Warn:
+    description: Command for staff to warn a player
+    usage: /<command>
+    permission: aid.staff
+  Reload:
+    description: admin command to reload config
+    usage: /<command>
+    permission: aid.admin
+
+permissions:
+  aid.use:
+    description: allow player to request assistance
+    default: true
+  aid.staff:
+    description: permission for the server staffs
+    default: false
+  aid.admin:
+    description: permission for admins
+    default: false
+    children:
+      aid.staff:
+        description: perms of a staff
+        default: false
+
+
+

@@ -1,0 +1,7 @@
+#The unit of time used is Minutes
+aid-cooldown: 15
+aid-title: '&6&lPlayer &b&l$player_name$'
+aid-subtitle: '&6&lhas requested assistance!'
+aid-message: '&fPlease wait the mods will reach out to you soon'
+warn-message: '&bPlayer &f$target_name$ &bhas been warned by &f$player_name$ &bfor&f: &b&c '
+warn-title: '&4&lYou have been Warned'
